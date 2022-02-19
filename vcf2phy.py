@@ -2,19 +2,27 @@
 # -*- coding: utf-8 -*-
 
 """
+The original script was wroten by Edgardo M. Ortiz (Email: e.ortiz.v@gmail.com).
+In this version, minor revisions was made by Baohua Chen (Email: cbh1117@163.com)
+to make it can be imported to other python scripts and be executed in python evironment
+rather than fork bash process.
+"""
+
+"""
 The script converts a collection of SNPs in VCF format into a PHYLIP, FASTA,
 NEXUS, or binary NEXUS file for phylogenetic analysis. The code is optimized
 to process VCF files with sizes >1GB. For small VCF files the algorithm slows
 down as the number of taxa increases (but is still fast).
 
 Any ploidy is allowed, but binary NEXUS is produced only for diploid VCFs.
+
 """
 
 __author__      = "Edgardo M. Ortiz"
 __credits__     = "Juan D. Palacio-Mejía"
-__version__     = "2.8"
+__version__     = "2.8.1"
 __email__       = "e.ortiz.v@gmail.com"
-__date__        = "2021-08-10"
+__date__        = "2021-02-19"
 
 import argparse
 import gzip
