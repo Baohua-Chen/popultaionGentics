@@ -2,13 +2,19 @@
 # -*- coding: utf-8 -*-
 
 """
-The original script was wroten by Edgardo M. Ortiz (Email: e.ortiz.v@gmail.com).
-In this version, minor revisions was made by Baohua Chen (Email: cbh1117@163.com)
+The original script is written by Edgardo M. Ortiz (Email: e.ortiz.v@gmail.com).
+In this version, minor revision is made by Baohua Chen (Email: cbh1117@163.com)
 to make it can be imported to other python scripts and be executed in python evironment
-rather than forking a bash process.
-"""
+rather than forking a shell process.
+Usage:
+    args = vcf2phy.args_parse() # Build argparser object with default arguments.
+    args.filename = INPUTVCF
+    args.folder = OUTPUTFOLDER
+    args.prefix = OUTPUTPREFIX
+    ... # Any argument that you'd like to change
+    vcf2phy.convert(args) # Perform converting
+    Usage is not changed if you want to execute it under shell environments.
 
-"""
 The script converts a collection of SNPs in VCF format into a PHYLIP, FASTA,
 NEXUS, or binary NEXUS file for phylogenetic analysis. The code is optimized
 to process VCF files with sizes >1GB. For small VCF files the algorithm slows
