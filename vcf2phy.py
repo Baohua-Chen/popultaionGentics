@@ -5,7 +5,7 @@
 The original script was wroten by Edgardo M. Ortiz (Email: e.ortiz.v@gmail.com).
 In this version, minor revisions was made by Baohua Chen (Email: cbh1117@163.com)
 to make it can be imported to other python scripts and be executed in python evironment
-rather than forking an bash process.
+rather than forking a bash process.
 """
 
 """
